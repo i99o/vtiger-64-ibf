@@ -385,8 +385,8 @@ mysql:
 
     databases:
         mysqlnd_m0tzxb7of1ds:
-            name: vtiger64-ibf
-            sql: /vagrant/v1.sql
+            name: vtiger64ibf
+            sql: /vagrant/12.sql
         
         
     grants:
