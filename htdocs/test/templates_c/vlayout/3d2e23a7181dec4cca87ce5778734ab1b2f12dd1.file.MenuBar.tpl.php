@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2016-04-17 00:49:24
+<?php /* Smarty version Smarty-3.1.7, created on 2016-04-25 10:21:36
          compiled from "/var/www/htdocs/includes/runtime/../../layouts/vlayout/modules/Vtiger/MenuBar.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:19297994295712dd944dff32-26598588%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:619387557571defb07c85f5-93811204%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '19297994295712dd944dff32-26598588',
+  'nocache_hash' => '619387557571defb07c85f5-93811204',
   'function' => 
   array (
   ),
@@ -54,9 +54,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5712dd94841f8',
+  'unifunc' => 'content_571defb0b1aff',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5712dd94841f8')) {function content_5712dd94841f8($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_571defb0b1aff')) {function content_571defb0b1aff($_smarty_tpl) {?>
 <?php $_smarty_tpl->tpl_vars["topMenus"] = new Smarty_variable($_smarty_tpl->tpl_vars['MENU_STRUCTURE']->value->getTop(), null, 0);?><?php $_smarty_tpl->tpl_vars["moreMenus"] = new Smarty_variable($_smarty_tpl->tpl_vars['MENU_STRUCTURE']->value->getMore(), null, 0);?><?php $_smarty_tpl->tpl_vars['NUMBER_OF_PARENT_TABS'] = new Smarty_variable(count(array_keys($_smarty_tpl->tpl_vars['moreMenus']->value)), null, 0);?><div class="navbar" id="topMenus" style="overflow: hidden;height:40px;"><div class="navbar-inner" id="nav-inner"><div class="menuBar row-fluid"><div class="span9"><ul class="nav modulesList" id="largeNav"><li class="tabs"><a class="alignMiddle <?php if ($_smarty_tpl->tpl_vars['MODULE']->value=='Home'){?> selected <?php }?>" href="<?php echo $_smarty_tpl->tpl_vars['HOME_MODULE_MODEL']->value->getDefaultUrl();?>
 "><img src="<?php echo vimage_path('home.png');?>
 " alt="<?php echo vtranslate('LBL_HOME',$_smarty_tpl->tpl_vars['moduleName']->value);?>

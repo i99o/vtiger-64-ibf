@@ -6,26 +6,20 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
- * Reviewed by crm-now GmbH
  ************************************************************************************/
 $languageStrings = array(
-	'SINGLE_ProjectMilestone'	=>	"Projektmeilenstein",
-	'LBL_ADD_RECORD'	=>	"Meilenstein hinzufügen",
-	'LBL_RECORDS_LIST'	=>	"Meilensteinliste",
-	'LBL_PROJECTS_LIST'	=>	"Projektliste",
+	'SINGLE_ProjectMilestone'	=>	"Projekt Milestone",
+	'LBL_ADD_RECORD'	=>	"Projekt hinzufügen Milestone",
+	'LBL_RECORDS_LIST'	=>	"Projekt Milestones Liste",
+	'LBL_PROJECTS_LIST'	=>	"Projekte Liste",
 	'LBL_TASKS_LIST'	=>	"Aufgabenliste",
-	'LBL_MILESTONES_LIST'	=>	"Meilensteinliste",
-	'LBL_PROJECT_MILESTONE_INFORMATION'	=>	"Meilensteininformationen",
-	'Project Milestone Name'	=>	"Meilensteinnamen",
-	'Milestone Date'	=>	"Meilensteindatum",
-	'Project Milestone No'	=>	"Meilensteinnummer",
+	'LBL_MILESTONES_LIST'	=>	"Meilensteine ​​Liste",
+	'LBL_PROJECT_MILESTONE_INFORMATION'	=>	"Projekt Milestone Einzelheiten",
+	'Project Milestone Name'	=>	"Projekt Milestone Namen",
+	'Milestone Date'	=>	"Milestone Datum",
+	'Project Milestone No'	=>	"Projekt Milestone Nummer",
 	//picklist values
-	'administrative' => 'administrativ',
-    'operative' => 'operativ',
-    'other' => 'andere',
-	
-	//crm-now: missing entries in en_us file
-    'description' => 'Beschreibung',
-    'Related to' => 'bezogen auf',
+	'administrative' => 'Administrativ',
+    'operative' => 'Operativ',
+    'other' => 'Andere',
 );
-?>

@@ -6,25 +6,23 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
- * Reviewed by crm-now GmbH
  ************************************************************************************/
 
 $languageStrings = Array(
-    'LBL_ADD_FEED_SOURCE' => 'RSS Quelle hinzufügen',
-    'LBL_ENTER_FEED_SOURCE' => 'RSS Quelle hinzufügen',
-    'LBL_FEEDS_LIST_FROM' => 'RSS Quellen aus',
-    'LBL_FEED_SOURCE' => 'RSS Quelle',
-	'LBL_RSS_FEED_SOURCES' => 'RSS Quellen',
-    'LBL_SENDER' => 'Sender',
-    'LBL_SET_AS_DEFAULT' => 'als Standard setzen',
-    'SINGLE_Rss' => 'RSS Quelle',
+    'LBL_RSS_FEED_SOURCES' => 'Rss Feed-Quellen',
+    'LBL_ADD_FEED_SOURCE' => 'Futtermittel Quelle hinzufügen',
+    'LBL_FEEDS_LIST_FROM' => 'Liste der Feeds aus',
+    'LBL_SET_AS_DEFAULT' => 'Standard machen',
+    'LBL_SENDER' => 'Absender',
+    'LBL_FEED_SOURCE' => 'Feed-Quelle',
+    'LBL_ENTER_FEED_SOURCE' => 'Geben Futterquelle',  
+    'SINGLE_Rss' => 'Rss Futtermittel',
 );
 
-
 $jsLanguageStrings = array(
-	'JS_RSS_SUCCESSFULLY_SAVED' => 'RSS erfolgreich gespeichert',
-    'JS_INVALID_RSS_URL' => 'ungültige RSS URL',
-    'JS_RSS_MADE_AS_DEFAULT' => 'RSS als Standard gesetzt',
+	'JS_RSS_SUCCESSFULLY_SAVED' => 'Rss erfolgreich gespeichert',
+    'JS_INVALID_RSS_URL' => 'Ungültige Rss url',
+    'JS_RSS_MADE_AS_DEFAULT' => 'Rss Gemacht als Standard',
     
 );
 

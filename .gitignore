@@ -1,1 +1,7 @@
+/htdocs/test/templates_c
 .DS_Store
+htdocs2
+html
+php_errors.log
+php-fpm.log
+.vagrant

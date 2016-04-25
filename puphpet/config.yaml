@@ -274,7 +274,9 @@ php:
     ini:
         session.save_path: /var/lib/php/session
         date.timezone: UTC
-        display_errors: 'Off'
+        display_errors: 'On'
+        short_open_tag: 'On'
+        max_execution_time: 0
         error_reporting: 'E_ALL & ~E_NOTICE & ~E_STRICT & ~E_WARNING'
         log_errors: 'On'
         error_log: /var/www/php_errors.log
@@ -379,12 +381,8 @@ mysql:
         mysqlnu_5uhxeurettzq:
             name: dbuser
             password: '123'
-        mysqlnu_qwpxvziazgsk:
-            name: vtiger
-            password: '123'
-        mysqlnu_qwpxvziazgsk:
-            name: intranet
-            password: 'intranet'
+
+
     databases:
         mysqlnd_m0tzxb7of1ds:
             name: vtiger64-ibf
@@ -397,16 +395,8 @@ mysql:
             table: '*.*'
             privileges:
                 - ALL
-        mysqlng_vk054ierst52:
-            user: vtiger
-            table: '*.*'
-            privileges:
-                - ALL  
-        mysqlng_vk054ierst53:
-            user: intranet
-            table: '*.*'
-            privileges:
-                - ALL        
+
+
 postgresql:
     install: '0'
     settings:

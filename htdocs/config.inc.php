@@ -18,10 +18,6 @@ version_compare(PHP_VERSION, '5.5.0') <= 0 ? error_reporting(E_WARNING & ~E_NOTI
 //ini_set('display_errors','on'); version_compare(PHP_VERSION, '5.5.0') <= 0 ? error_reporting(E_WARNING & ~E_NOTICE & ~E_DEPRECATED) : error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT);   // DEBUGGING
 
 
-
-
-
-
 include('vtigerversion.php');
 
 // more than 8MB memory needed for graphics
@@ -52,9 +48,9 @@ $HELPDESK_SUPPORT_EMAIL_REPLY_ID = $HELPDESK_SUPPORT_EMAIL_ID;
 
 $dbconfig['db_server'] = 'localhost';
 $dbconfig['db_port'] = ':3306';
-$dbconfig['db_username'] = 'vtiger';
-$dbconfig['db_password'] = 'Test_234';
-$dbconfig['db_name'] = 'vtiger64-ibf';
+$dbconfig['db_username'] = 'dbuser';
+$dbconfig['db_password'] = '123';
+$dbconfig['db_name'] = 'vtigeribf64';
 $dbconfig['db_type'] = 'mysqli';
 $dbconfig['db_status'] = 'true';
 
@@ -83,15 +79,14 @@ $dbconfigoption['portability'] = 0;
 // ssl default value = false
 $dbconfigoption['ssl'] = false;
 
-
-
 $host_name = $dbconfig['db_hostname'];
 
-$site_URL = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'];
+$site_URL = 'http://lokal.vtiger.ibf.de/';
+
 // url for customer portal (Example: http://vtiger.com/portal)
 $PORTAL_URL = $site_URL.'/customerportal';
 // root directory path
-$root_directory = dirname(__FILE__);
+$root_directory = '/var/www/htdocs/';
 
 // cache direcory path
 $cache_dir = 'cache/';
@@ -174,7 +169,7 @@ $default_charset = 'UTF-8';
 
 // default language
 // default_language default value = en_us
-$default_language = 'de_de';
+$default_language = 'en_us';
 
 // add the language pack name to every translation string in the display.
 // translation_string_prefix default value = false
@@ -190,7 +185,7 @@ $display_empty_home_blocks = false;
 $disable_stats_tracking = false;
 
 // Generating Unique Application Key
-$application_unique_key = '9c94911b8bef98083b4e1d43a34847bc';
+$application_unique_key = '2f2b8d7cd504f5ea5742a55d25836a79';
 
 // trim descriptions, titles in listviews to this value
 $listview_max_textlength = 40;
@@ -210,7 +205,4 @@ if(isset($default_timezone) && function_exists('date_default_timezone_set')) {
 $default_layout = 'vlayout';
 
 include_once 'config.security.php';
-
-
-//die("\n\n#####\n<br><br>\n".__FILE__.' - '.__LINE__."\n<br><br>\n#####\n");
 ?>

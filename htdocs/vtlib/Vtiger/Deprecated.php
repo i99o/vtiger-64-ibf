@@ -437,8 +437,15 @@ class Vtiger_Deprecated {
 		$relativeFilePath = str_replace($rootdirpath, '', $realfilepath);
 		$filePathParts = explode('/', $relativeFilePath);
 
-		if (stripos($realfilepath, $rootdirpath) !== 0 || in_array($filePathParts[0], $unsafeDirectories)) {
-			//die("Sorry! 1 Attempt to access restricted file.");
+
+		//print_r($filePathParts);
+
+//$check = stripos($realfilepath, $rootdirpath);
+
+		//die((string) $check );
+		//die($realfilepath."\n\n#####\n<br><br>\n".__FILE__.' - '.__LINE__."\n<br><br>\n#####\n");
+		if (stripos($realfilepath, $rootdirpath) > 0 ) {
+			die($realfilepath. " --5Sorry! Attempt to access restricted file.");
 		}
 	}
 
@@ -467,7 +474,7 @@ class Vtiger_Deprecated {
 		$filePathParts = explode('/', $relativeFilePath);
 
 		if (stripos($realfilepath, $rootdirpath) !== 0 || !in_array($filePathParts[0], $safeDirectories)) {
-			die("Sorry! 3 Attempt to access restricted file.");
+			die("4Sorry! Attempt to access restricted file.");
 		}
 
 	}
@@ -475,7 +482,7 @@ class Vtiger_Deprecated {
 	/** Function to check the file access is made within web root directory. */
 	static function checkFileAccess($filepath) {
 		if (!self::isFileAccessible($filepath)) {
-			die("Sorry! 2 Attempt to access restricted file.");
+			die("3Sorry! Attempt to access restricted file.");
 		}
 	}
 

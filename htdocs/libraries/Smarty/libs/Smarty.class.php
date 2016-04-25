@@ -125,7 +125,7 @@ class Smarty extends Smarty_Internal_TemplateBase {
     /**
      * define caching modes
      */
-    const CACHING_OFF = 1;
+    const CACHING_OFF = 0;
     const CACHING_LIFETIME_CURRENT = 1;
     const CACHING_LIFETIME_SAVED = 2;
     /**
@@ -381,7 +381,7 @@ class Smarty extends Smarty_Internal_TemplateBase {
      * </ul>
      * @var string
      */
-    public $debugging_ctrl = 'URL';
+    public $debugging_ctrl = 'NONE';
     /**
      * Name of debugging URL-param.
      *

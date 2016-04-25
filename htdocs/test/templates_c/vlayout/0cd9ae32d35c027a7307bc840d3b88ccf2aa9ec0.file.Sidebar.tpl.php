@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2016-04-19 10:42:23
+<?php /* Smarty version Smarty-3.1.7, created on 2016-04-25 10:21:58
          compiled from "/var/www/htdocs/includes/runtime/../../layouts/vlayout/modules/Settings/Vtiger/Sidebar.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:5140256757160b8fe78170-83333903%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:720886999571defc6cb9805-07067723%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '5140256757160b8fe78170-83333903',
+  'nocache_hash' => '720886999571defc6cb9805-07067723',
   'function' => 
   array (
   ),
@@ -26,9 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_57160b9000ade',
+  'unifunc' => 'content_571defc6d6e13',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_57160b9000ade')) {function content_57160b9000ade($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_571defc6d6e13')) {function content_571defc6d6e13($_smarty_tpl) {?>
 <div class="sidebarTitleBlock"><h3 class="titlePadding themeTextColor unSelectedQuickLink cursorPointer"><a href="index.php?module=Vtiger&parent=Settings&view=Index"><?php echo vtranslate('LBL_SETTINGS',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </a></h3></div><!--div><input class='input-medium' type='text' name='settingsSearch' placeholder=<?php echo vtranslate("LBL_SEARCH_SETTINGS_PLACEHOLDER",$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
  ></div--><div class="quickWidgetContainer accordion" id="settingsQuickWidgetContainer"><?php  $_smarty_tpl->tpl_vars['MENU'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['MENU']->_loop = false;

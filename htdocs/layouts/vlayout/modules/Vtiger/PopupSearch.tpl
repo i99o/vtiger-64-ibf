@@ -9,7 +9,6 @@
 *
 ********************************************************************************/
 -->*}
-
 {strip}
     <input type="hidden" id="parentModule" value="{$SOURCE_MODULE}"/>
     <input type="hidden" id="module" value="{$MODULE}"/>
@@ -26,8 +25,6 @@
         <div class="logo span6"><img src="{$COMPANY_LOGO->get('imagepath')}" title="{$COMPANY_LOGO->get('title')}" alt="{$COMPANY_LOGO->get('alt')}" width="160px;"/></div>
         <div class="span6"><b>{vtranslate($MODULE_NAME, $MODULE_NAME)}</b></div>
     </div>
-
-
     <div class="row-fluid">
 		<div class="span2">
 			{if $MULTI_SELECT}
@@ -39,11 +36,11 @@
         <div class="span6">
             <form class="form-horizontal popupSearchContainer" onsubmit="return false;" method="POST">
                 <div class="control-group margin0px">
-                    <input  style="display:none;" class="span2" style="display:none;" type="text" placeholder="{vtranslate('LBL_TYPE_SEARCH')}" id="searchvalue"/>&nbsp;&nbsp;
-                    <span  style="display:none;"><strong>{vtranslate('LBL_IN')}</strong></span>&nbsp;
+                    <input class="span2" type="text" placeholder="{vtranslate('LBL_TYPE_SEARCH')}" id="searchvalue"/>&nbsp;&nbsp;
+                    <span><strong>{vtranslate('LBL_IN')}</strong></span>&nbsp;
                     <span>
                         {assign var = defaultSearchField value = $RECORD_STRUCTURE_MODEL->getModule()->getDefaultSearchField()}
-                        <select style="width: 140px; display:none;" class="chzn-select22" id="searchableColumnsList">
+                        <select style="width: 140px;" class="chzn-select" id="searchableColumnsList">
                             {foreach key=block item=fields from=$RECORD_STRUCTURE}
                                 {foreach key=fieldName item=fieldObject from=$fields}
                                     <optgroup>
@@ -53,29 +50,12 @@
                             {/foreach}
                         </select>
                     </span>&nbsp;&nbsp;
-
-					<select style="width: 140px;" class="chzn-select"
-							id="filterProductsList" onchange="$('#searchvalue').val($(this).val());$('#searchableColumnsList').val('productcategory');$('#popupSearchButton button').click();">
-						<optgroup>
-							<option value="" selected="">Alle</option>
-						</optgroup>
-						<optgroup>
-							<option value="Smart Repair">Smart Repair</option>
-						</optgroup>
-						<optgroup>
-							<option value="Verkauf">Verkauf</option>
-						</optgroup>
-
-					</select>&nbsp;&nbsp;
-
-
                     <span id="popupSearchButton">
                         <button class="btn"><i class="icon-search " title="{vtranslate('LBL_SEARCH_BUTTON')}"></i></button>
                     </span>
                 </div>
             </form>
         </div>
-		<span style="font-weight:700;">TEST SBA</span>
 		<div class="span4">
 			{if $SOURCE_MODULE neq 'PriceBooks' && $SOURCE_FIELD neq 'productsRelatedList'}
 			<div class="popupPaging">
@@ -116,5 +96,4 @@
 			{/if}
 		</div>
     </div>
-
 {/strip}

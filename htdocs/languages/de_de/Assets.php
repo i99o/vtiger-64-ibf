@@ -6,26 +6,24 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
- * Reviewed by crm-now GmbH
  ************************************************************************************/
 $languageStrings = array(
-	'Asset Name' => 'Bestandsverwaltungsname',
-    'Asset No' => 'Bestandsverwaltungsnr.',
-	'Assets'        => 'Bestandsverwaltung',
-	'Customer Name' => 'Kundenname',
-	'Date in Service' => 'Servicedatum',
-	'Date Sold' => 'Verkaufsdatum',
-	'In Service'=>'In Service',
-	'Invoice Name' => 'Rechnungsname',
-	'LBL_ADD_RECORD' => 'Bestandsverwaltung hinzufügen',
-	'LBL_ASSET_INFORMATION' => 'Details',
-	'LBL_RECORDS_LIST' => 'BestandsverwaltungsListe',
-	'Notes' => 'Beschreibung',
-	'Out-of-service'=>'wird nicht mehr unterstützt',
-	'Serial Number' => 'Seriennummer',
-	'Shipping Method' => 'Versandmethode',
-	'Shipping Tracking Number' => 'Sendungsverfolgungsnummer',
-	'SINGLE_Assets' => 'Bestandsverwaltung',
-	'Tag Number' => 'Tag Nummer',
+	'Assets'                       => 'Bestandsverwaltung'          ,
+	'SINGLE_Assets'                => 'Bestandsverwaltung'          , 
+	'LBL_ADD_RECORD'               => 'Add Bestandsverwaltung'      , 
+	'LBL_RECORDS_LIST'             => 'Bestandsverwaltung List'     , 
+	'LBL_ASSET_INFORMATION'        => 'Bestandsverwaltung Information', 
+	'Asset No'                     => 'Bestandsverwaltung Nr'       , 
+	'Serial Number'                => 'Seriennummer'                , 
+	'Date Sold'                    => 'Verkaufsdatum'               , 
+	'Date in Service'              => 'Servicedatum'                , 
+	'Tag Number'                   => 'Tag-Nummer'                  , 
+	'Invoice Name'                 => 'Rechnung'                    , 
+	'Shipping Method'              => 'Versandmethode'              , 
+	'Shipping Tracking Number'     => 'Sendungsverfolgungsnummer'   , 
+	'Asset Name'                   => 'Titel Bestandsverwaltung'    , 
+	'Customer Name'                => 'Organisation'                , 
+	'Notes'                        => 'Beschreibung'                , 
+	'In Service'                   => 'unterstützt'                , 
+	'Out-of-service'               => 'wird nicht mehr unterstützt', 
 );
-?>

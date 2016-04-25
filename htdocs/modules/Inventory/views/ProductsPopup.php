@@ -19,8 +19,6 @@ class Inventory_ProductsPopup_View extends Vtiger_Popup_View {
 	}
 	
 	function process (Vtiger_Request $request) {
-
-		die("\n\n#####\n<br><br>\n".__FILE__.' - '.__LINE__."\n<br><br>\n#####\n");
 		$viewer = $this->getViewer ($request);
 		$companyDetails = Vtiger_CompanyDetails_Model::getInstanceById();
 		$companyLogo = $companyDetails->getLogo();

@@ -72,7 +72,7 @@ class Vtiger_Utils {
 
                 if(stripos($realfilepath, $rootdirpath) !== 0 || in_array($filePathParts[0], $unsafeDirectories)) {
 			if($dieOnFail) {
-				die("Sorry! 4 Attempt to access restricted file.");
+				die("1Sorry! Attempt to access restricted file.");
 			}
 			return false;
 		}
@@ -105,7 +105,7 @@ class Vtiger_Utils {
 
 		if(stripos($realfilepath, $rootdirpath) !== 0) {
 			if($dieOnFail) {
-				die("Sorry! 5 Attempt to access restricted file.");
+				die("2Sorry! Attempt to access restricted file.");
 			}
 			return false;
 		}
