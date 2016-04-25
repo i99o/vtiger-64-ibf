@@ -5,3 +5,4 @@ html
 php_errors.log
 php-fpm.log
 .vagrant
+.idea
